@@ -12,3 +12,5 @@ que import e utilize a função
 alugarFilme(filme, preço)
 
 ### Volte aqui e digite "concluído"
+
+entregue
