@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilos/index.css">    
-    <title>Document</title>
+    <title>PureBliss | Doces Saudáveis & Funcionais</title>
+    <!-- Fontes Recomendadas nos Requisitos -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@500;700;800&viewport=width=device-width" rel="stylesheet">
+    <!-- Ícones Lucide para visual moderno e minimalista -->
+    <script src="https://unpkg.com"></script>
+    <link rel="stylesheet" href="../../estilos/index.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="navbar">
+        <div class="logo">Pure<span>Bliss</span></div>
+        <nav class="nav-links">
+            <a href="/" class="active">Início</a>
+            <a href="/sobre">Sobre Nós</a>
+            <a href="/produtos">Produtos</a>
+            <a href="/servicos">Serviços</a>
+        </nav>
+        <a href="/produtos" class="btn-nav">Ver Cardápio</a>
+    </header>
+
+    <!-- Seção Hero (Apresentação Principal) -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge"><i data-lucide="sparkles"></i> 100% Saudável e Inclusivo</span>
+            <h1>O sabor marcante do doce artesanal, <span>sem culpa.</span></h1>
+            <p>Descubra sobremesas extraordinárias criadas com ingredientes puros. Adoçadas naturalmente, livres de glúten e lactose, projetadas para o seu bem-estar.</p>
+            <div class="hero-actions">
+                <a href="/produtos" class="btn-primary">Explorar Sabores</a>
+                <a href="/sobre" class="btn-secondary">Nossa Filosofia</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <!-- Layout assíncrono moderno com gradiente suave de fundo -->
+            <div class="hero-bg-gradient"></div>
+            <img src="https://unsplash.com" alt="Doce Saudável Funcional" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais (Tabela Nutricional Desmistificada) -->
+    <section class="diferenciais">
+        <div class="section-title">
+            <h2>Puro por Natureza, Rico em Sabor</h2>
+            <p>Transformamos a confeitaria funcional em uma experiência de alta gastronomia.</p>
+        </div>
+        <div class="grid-diferenciais">
+            <div class="card-diferencial">
+                <div class="icon-box"><i data-lucide="leaf"></i></div>
+                <h3>Adoçado com Estivia Pura</h3>
+                <p>Zero açúcar adicionado. Utilizamos apenas edulcorantes naturais de base vegetal que não alteram o índice glicêmico.</p>
+            </div>
+            <div class="card-diferencial">
+                <div class="icon-box"><i data-lucide="shield-check"></i></div>
+                <h3>100% Sem Glúten & Lactose</h3>
+                <p>Cozinha totalmente segura e livre de contaminação cruzada para celíacos e intolerantes severos.</p>
+            </div>
+            <div class="card-diferencial">
+                <div class="icon-box"><i data-lucide="heart"></i></div>
+                <h3>Nutrição Funcional</h3>
+                <p>Ingredientes selecionados ricos em fibras e nutrientes bioativos que abraçam o seu organismo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Prova Social de Autoridade -->
+    <section class="depoimentos">
+        <div class="section-title">
+            <h2>Aprovado por Especialistas</h2>
+            <p>Quem entende de saúde e nutrição também se apaixona pelo nosso sabor.</p>
+        </div>
+        <div class="grid-depoimentos">
+            <div class="card-depoimento">
+                <div class="stars">★★★★★</div>
+                <p>"Encontrar doces seguros para pacientes com restrições severas e que ainda mantêm o sabor artesanal e cremosidade impecável era um desafio, até conhecer a PureBliss."</p>
+                <div class="autor">
+                    <strong>Dra. Mariana Silva</strong>
+                    <span>Nutricionista Clínica & Funcional</span>
+                </div>
+            </div>
+            <div class="card-depoimento">
+                <div class="stars">★★★★★</div>
+                <p>"O equilíbrio de ingredientes é perfeito. Consigo saciar o desejo pelo doce sem abrir mão da minha rotina de saúde e sem picos de insulina."</p>
+                <div class="autor">
+                    <strong>Beatriz Ramos</strong>
+                    <span>Cliente com Diabetes Tipo 1</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 PureBliss Confeitaria Funcional. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Inicialização dos Ícones Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

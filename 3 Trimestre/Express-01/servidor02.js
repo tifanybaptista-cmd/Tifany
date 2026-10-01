@@ -10,7 +10,7 @@ app.use(express.static(path.join(dirBase, 'publico')))
 
 // Criar as rotas do servidor
 app.get('/',(req, res) => {
-    res.sendFile('paginas/index.html', {root: import.meta.dinarme})
+    res.sendFile('paginas/index.html', {root: dirBase})
 })
 
 
