@@ -1,4 +1,191 @@
-*{
-    background-color: blue;
-    color: aliceblue;
+/* ==========================================================================
+   DESIGN SYSTEM GLOBAL - BURGER MOON
+   ========================================================================== */
+
+:root {
+    /* Paleta de Cores Obrigatória */
+    --primary: #171717;      /* Preto — #171717 */
+    --secondary: #F4C542;    /* Amarelo — #F4C542 */
+    --bg-page: #FFF8ED;      /* Creme — #FFF8ED */
+    --text-light: #FFFFFF;   /* Branco — #FFFFFF */
+    --text-dark: #171717;    
+    
+    /* Configurações Visuais */
+    --card-bg: #FFFFFF;
+    --text-muted: #666666;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Moderna e Sans-serif */
+    --radius-cards: 20px;    /* Cards Arredondados */
+    --radius-buttons: 25px;  /* Botões Chamativos e Arredondados */
+}
+
+/* Reset de Fábrica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   NAVEGAÇÃO: CABEÇALHO FIXO (ROTAS EXPRESS)
+   ========================================================================== */
+header {
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+}
+
+.logo {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--secondary);
+}
+
+/* Compensação do Topo para Header Fixo */
+main {
+    margin-top: 85px; 
+    flex: 1;
+}
+
+/* Banner Hero Padrão */
+.hero {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 6rem 2rem;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+    color: #e0e0e0;
+}
+
+/* Container de Conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: var(--secondary);
+    margin: 0.6rem auto 0 auto;
+    border-radius: 3px;
+}
+
+/* Botões Arredondados */
+.btn {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 0.9rem 2.2rem;
+    border: none;
+    border-radius: var(--radius-buttons);
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: #e0b433;
+}
+
+/* ==========================================================================
+   RODAPÉ UNIFICADO
+   ========================================================================== */
+footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: auto;
+    border-top: 4px solid var(--secondary);
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-socials a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Responsividade do Menu */
+@media (max-width: 768px) {
+    .nav-container { flex-direction: column; gap: 1.2rem; }
+    .nav-menu { gap: 1.5rem; }
+    main { margin-top: 120px; }
+    .hero h1 { font-size: 2.4rem; }
 }

@@ -3,109 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Espacial - Burger Moon</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Início - Burger Moon</title>
+    <!-- Importação correta do CSS a partir do Express static -->
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-
-    <!-- Cabeçalho Fixo -->
-    <header class="main-header">
-        <div class="header-container">
-            <a href="/" class="logo">🍔 Burger <span>Moon</span></a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="/">Início</a></li>
-                    <li><a href="/produtos" class="active">Produtos</a></li>
-                    <li><a href="/sobre">Sobre Nós</a></li>
-                    <li><a href="/contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Cabeçalho Fixo Obrigatório com Links para Rotas Express -->
+    <header>
+        <nav class="nav-container">
+            <a href="/" class="logo">🌙 Burger Moon</a>
+            <ul class="nav-menu">
+                <li><a href="/">Início</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                <li><a href="/sobre">Sobre Nós</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero-section" style="padding-bottom: 40px; text-align: center;">
-            <div class="section-title" style="margin-bottom: 0;">
-                <h1 style="color: #FFFFFF; font-size: 3rem;">Cardápio Interestelar</h1>
-                <p style="color: #F4C542; font-size: 1.2rem; margin-top: 10px;">Escolha seu combustível para essa viagem espacial</p>
-            </div>
+        <!-- Elemento de imagem contextualizado e elementos visuais de Lua e Estrelas -->
+        <section class="hero">
+            <h1>Hambúrgueres Fora de Órbita! 🚀</h1>
+            <p>Bem-vindo à Burger Moon, onde o sabor da galáxia pousa diretamente no seu prato.</p>
+            <a href="/produtos" class="btn">Ver Cardápio Espacial</a>
         </section>
 
-        <!-- Seção do Catálogo -->
-        <section class="highlights-section">
-            <div class="cards-grid">
-                <!-- Hambúrguer 1 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Burger Apollo 11">
-                    <div class="card-body">
-                        <h3>Burger Apollo 11</h3>
-                        <p>Blend bovino de 180g, queijo cheddar derretido como lava, bacon crocante e maionese artesanal da casa.</p>
-                        <span class="price">R$ 34,90</span>
-                    </div>
-                </div>
-
-                <!-- Hambúrguer 2 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Cheeseburger Gravidade Zero">
-                    <div class="card-body">
-                        <h3>Gravidade Zero</h3>
-                        <p>Dois blends de 120g super smash, muito queijo prato, picles espaciais e molho secreto da galáxia.</p>
-                        <span class="price">R$ 29,90</span>
-                    </div>
-                </div>
-
-                <!-- Hambúrguer 3 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Burger Eclipse Veggie">
-                    <div class="card-body">
-                        <h3>Eclipse Veggie</h3>
-                        <p>Hambúrguer de grão-de-bico com ervas finas, queijo vegano derretido, rúcula fresca e tomate confitado.</p>
-                        <span class="price">R$ 31,90</span>
-                    </div>
-                </div>
-
-                <!-- Acompanhamento 1 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Batata Eclipse">
-                    <div class="card-body">
-                        <h3>Batata Eclipse</h3>
-                        <p>Porção generosa de batatas fritas rústicas, cobertas com muito queijo derretido e pedacinhos de bacon espacial.</p>
-                        <span class="price">R$ 22,90</span>
-                    </div>
-                </div>
-
-                <!-- Acompanhamento 2 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Anéis de Saturno">
-                    <div class="card-body">
-                        <h3>Anéis de Saturno</h3>
-                        <p>Anéis de cebola gigantes e super crocantes, empanados na farinha panko cósmica com molho barbecue.</p>
-                        <span class="price">R$ 19,90</span>
-                    </div>
-                </div>
-
-                <!-- Bebida 1 -->
-                <div class="product-card">
-                    <img src="https://unsplash.com" alt="Shake Supernova">
-                    <div class="card-body">
-                        <h3>Shake Supernova</h3>
-                        <p>Milkshake artesanal de chocolate belga, chantilly interestelar e raspas de cookies cósmicos.</p>
-                        <span class="price">R$ 18,90</span>
+        <section class="container">
+            <h2 class="section-title">Destaques Lunares</h2>
+            <div class="grid">
+                <!-- Cards com bordas arredondadas -->
+                <div class="card">
+                    <!-- Se você colocar a imagem1.jpg em src/public/images/ ela pode ser mapeada aqui como: <img src="/images/imagem1.jpg"> -->
+                    <div class="card-img">🍔</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Apollo Burger</h3>
+                        <p>Pão brioche estelar, blend artesanal de 150g e molho secreto lunar.</p>
+                        <div class="card-price">R$ 34,90</div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="main-footer">
-        <p>&copy; 2026 Burger Moon. Todos os direitos reservados. Feito com ❤️ por astronautas famintos.</p>
-        <div class="social-links">
-            <a href="#" target="_blank">Instamoon</a>
-            <a href="#" target="_blank">Faceburger</a>
-            <a href="#" target="_blank">TikTokCosmos</a>
+    <!-- Rodapé com Direitos Autorais e Redes Sociais Fictícias -->
+    <footer>
+        <div class="footer-socials">
+            <a href="#">@burgermoon.ficticio</a>
+            <a href="#">#BurgerMoonNoEspaco</a>
         </div>
+        <p>&copy; 2026 Burger Moon - Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
