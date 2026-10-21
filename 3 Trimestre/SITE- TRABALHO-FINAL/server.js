@@ -12,7 +12,15 @@ app.use(express.static(path.join(dirBase, 'src/publico')))
 app.get('/',(req, res) => {
     res.sendFile('src/paginas/index.html', {root: dirBase})
 })
-
+app.get('/',(req, res) => {
+    res.sendFile('src/paginas/sobre.html', {root: dirBase})
+})
+app.get('/',(req, res) => {
+    res.sendFile('src/paginas/produtos.html', {root: dirBase})
+})
+app.get('/',(req, res) => {
+    res.sendFile('src/paginas/contato.html', {root: dirBase})
+})
 
 // Liberar a porta do meu computador
 app.listen(porta, () => { console.log('Servidor está vivo!')})

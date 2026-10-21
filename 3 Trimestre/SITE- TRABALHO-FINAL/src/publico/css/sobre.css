@@ -1,0 +1,416 @@
+/* ==========================================================================
+   Configurações Globais e Variáveis (Tons Terrosos + Conceito Clean)
+   ========================================================================== */
+:root {
+    --bg-space-dark: #0f1c24;     /* Azul escuro profundo original da marca */
+    --bg-rustic-beige: #fdfbf7;   /* Fundo bege claro artesanal acolhedor */
+    --card-white: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --accent-gold: #f4be37;       /* Amarelo-ouro espacial */
+    --accent-brown: #78350f;      /* Marrom-terra rústico para tipografia artesanal */
+    --font-titles: 'Poppins', sans-serif;
+    --font-handwritten: 'Arvo', serif; /* Fonte pesada estrutural para toque rústico */
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-rustic-beige);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Header / Navbar Superior (Idêntica à Captura Base)
+   ========================================================================== */
+.navbar {
+    background-color: var(--bg-space-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+    color: #ffffff;
+    font-family: var(--font-titles);
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    color: var(--accent-gold);
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 1.8rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-gold);
+}
+
+/* ==========================================================================
+   Hero Section - Storytelling
+   ========================================================================== */
+.about-hero {
+    background-color: var(--bg-space-dark);
+    color: #ffffff;
+    padding: 5rem 5%;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-gold);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.award-badge {
+    background: #fef3c7;
+    color: var(--accent-brown);
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(244, 190, 55, 0.2);
+}
+
+.about-hero h1 {
+    font-family: var(--font-titles);
+    font-weight: 900;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.about-hero .subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+
+/* ==========================================================================
+   Seção de Pilares (RF03)
+   ========================================================================== */
+.pillars-section {
+    max-width: 1200px;
+    margin: -3rem auto 4rem auto; /* Eleva levemente os cards sobre o hero */
+    padding: 0 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pillar-card {
+    background: var(--card-white);
+    padding: 2.2rem 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+.pillar-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pillar-card h3 {
+    font-family: var(--font-handwritten);
+    color: var(--accent-brown);
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+}
+
+.pillar-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Linha do Tempo Estruturada (RF01)
+   ========================================================================== */
+.timeline-section {
+    padding: 2rem 5% 5rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-container {
+    position: relative;
+    width: 100%;
+}
+
+/* A linha central vertical */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #e2e8f0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Bolinha indicadora no centro */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    background-color: var(--card-white);
+    border: 3px solid var(--accent-gold);
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 50%; }
+
+.timeline-item.right::after { left: -8px; }
+
+.timeline-content {
+    padding: 1.5rem;
+    background-color: var(--card-white);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.timeline-content .year {
+    font-family: var(--font-handwritten);
+    font-size: 1.4rem;
+    color: var(--accent-gold);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Galeria de Bastidores (RF02)
+   ========================================================================== */
+.backstage-section {
+    max-width: 1200px;
+    margin: 0 auto 5rem auto;
+    padding: 0 5%;
+}
+
+.backstage-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.backstage-header h2 {
+    font-family: var(--font-titles);
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.backstage-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 1.5rem 1rem 1rem 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   CTA de Transição e Fechamento (Gatilho de Conversão)
+   ========================================================================== */
+.cta-transition {
+    max-width: 1200px;
+    margin: 0 auto 5rem auto;
+    padding: 0 5%;
+}
+
+.cta-box {
+    background-color: var(--bg-space-dark);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cta-box h2 {
+    font-family: var(--font-titles);
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.cta-box p {
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem;
+}
+
+.btn-cta-menu {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: var(--bg-space-dark);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-family: var(--font-titles);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cta-menu:hover {
+    background-color: #e0ac2b;
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Footer de Redes Padrão
+   ========================================================================== */
+.footer-bar {
+    background-color: var(--bg-space-dark);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Media Queries para Responsividade (Mobile-First)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Ajustes na Linha do Tempo para telas menores (vira coluna única à esquerda) */
+    .timeline-container::after {
+        left: 31px;
+    }
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .timeline-item.right {
+        left: 0%;
+    }
+    .timeline-item::after {
+        left: 23px;
+    }
+    .timeline-item.right::after {
+        left: 23px;
+    }
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .nav-links a {
+        margin: 0 0.6rem;
+    }
+}

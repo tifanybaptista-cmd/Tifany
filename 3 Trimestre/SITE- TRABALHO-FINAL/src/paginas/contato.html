@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Localização - Burger Moon</title>
+    <link rel="stylesheet" href="../../estilos/contato.css">
+    <!-- Google Fonts para consistência de marca -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar Superior Identidade Burger Moon -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🌙</span> Burger Moon
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Título Principal -->
+    <section class="contact-hero">
+        <h1>Contato & Base Espacial</h1>
+        <p>Precisa de suporte na órbita? Mande uma mensagem ou visite a nossa central.</p>
+    </section>
+
+    <!-- Container Principal de Conteúdo -->
+    <main class="contact-container">
+        
+        <!-- Bloco de Informações Interativas e Redução de Objeções (Lado Esquerdo) -->
+        <section class="info-panel">
+            
+            <!-- Status de Funcionamento Dinâmico (RF03) -->
+            <div class="status-badge open">
+                <span class="status-dot">🟢</span> ABERTO - Faça seu pedido intergaláctico!
+            </div>
+            
+            <!-- Canais Rápidos com Resposta Garantida (Gatilho de Conversão) -->
+            <div class="info-block">
+                <h2>Canais de Atendimento</h2>
+                <p class="response-time">⏱️ Respondemos no WhatsApp em até 3 minutos!</p>
+                
+                <!-- Botão Click-to-Chat WhatsApp (RF02) -->
+                <a href="https://wa.me." class="btn-whatsapp" target="_blank" aria-label="Chamar equipe no WhatsApp">
+                    <span class="wp-icon">💬</span> Chamar no WhatsApp
+                </a>
+                
+                <p class="alt-contact">📍 <strong>Telefone Fixo:</strong> (11) 4004-MOON</p>
+                <p class="alt-contact">📧 <strong>E-mail SAC:</strong> contato@burgermoon.ficticio</p>
+            </div>
+
+            <!-- Redução de Objeções / Transparência Financeira e Operacional (Gatilhos) -->
+            <div class="info-block security-box">
+                <h3>🚀 Informações de Entrega e Pagamento</h3>
+                <ul>
+                    <li><strong>Área de Atendimento:</strong> Entregamos em um raio de até 10km da nossa base espacial.</li>
+                    <li><strong>Taxa de Entrega:</strong> Fixa de R$ 7,00 para bairros parceiros.</li>
+                    <li><strong>Cartões Aceitos:</strong> Visa, Mastercard, Elo, Amex, Pix e Vale-Refeição (iFood, Sodexo, VR, Alelo).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Formulário de Feedback / Eventos (Lado Direito - RF04 / RNF01) -->
+        <section class="form-panel">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite seu nome..." aria-label="Nome Completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com" aria-label="E-mail de contato">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" aria-label="Telefone ou WhatsApp">
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Motivo do Contato</label>
+                    <select id="reason" name="reason" required aria-label="Selecione o motivo do contato">
+                        <option value="">Selecione uma opção...</option>
+                        <option value="elogio">Elogio ou Crítica</option>
+                        <option value="eventos">Reservas e Grandes Grupos</option>
+                        <option value="parcerias">Parcerias Comerciais</option>
+                        <option value="suporte">Problemas com o Pedido</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Escreva os detalhes aqui..." aria-label="Texto da mensagem"></textarea>
+                </div>
+
+                <!-- Simulação de Proteção Anti-Spam (RNF02) -->
+                <div class="captcha-placeholder">
+                    <small>🛡️ Protegido por reCAPTCHA Invisível</small>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Integração com Mapas Interativos Google Maps (RF01) -->
+    <section class="map-section">
+        <div class="map-header">
+            <h2>📍 Nossa Estação de Comando Física</h2>
+            <p>Venha saborear o blend direto da chapa e ver o processo de perto.</p>
+        </div>
+        <div class="map-wrapper">
+            <!-- Embed fictício estruturado com o marcador padrão do Google Maps -->
+            <iframe 
+                src="https://google.com" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da hamburgueria Burger Moon no mapa interativo">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Rodapé de Redes Tradicional -->
+    <footer class="footer-bar">
+        <span>@burgermoon.ficticio</span>
+        <span>#BurgerMoonNoEspaco</span>
+        <span>#SaborIntergalactico</span>
+    </footer>
+
+</body>
+</html>
