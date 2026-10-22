@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Moon - Hamburgueria Intergaláctica</title>
+    <!-- Link para folha de estilos customizada -->
+       <link rel="stylesheet" href="../../css/produtos.css">
+    <!-- Biblioteca de Ícones: Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Cabeçalho principal do site -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid :fa-moon logo-icon"></i> Burger Moon
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero Banner) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Hambúrgueres Fora de Órbita! <i class="fa-solid :fa-rocket rocket-icon"></i></h1>
+            <p>Bem-vindo à Burger Moon, onde a gravidade não segura o sabor do verdadeiro blend artesanal.</p>
+            <a href="#cardapio" class="btn-primary">Explorar o Cardápio</a>
+        </div>
+    </section>
+
+    <!-- Seção de Conteúdo e Destaques -->
+    <main id="cardapio" class="menu-section">
+        <div class="section-container">
+            
+            <div class="section-title-wrapper">
+                <h2>Destaque da Semana</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <!-- Grade de produtos do cardápio -->
+            <div class="products-grid">
+                
+                <!-- Item 1: Apollo Burger -->
+                <article class="product-card">
+                    <div class="card-body">
+                        <span class="badge badge-popular">
+                            <i class="fa-solid :fa-trophy"></i> Campeão de Vendas
+                        </span>
+                        <h3>Apollo Burger <i class="fa-solid :fa-fire text-danger"></i></h3>
+                        <p>Pão brioche estelar, blend artesanal de 150g defumado na própria órbita, queijo cheddar derretido e maionese de bacon espacial com um toque de geleia de pimenta da casa.</p>
+                        <span class="product-price">R$ 34,90</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary">Garantir o Meu</button>
+                    </div>
+                </article>
+
+                <!-- Item 2: Veggie Moon -->
+                <article class="product-card">
+                    <div class="card-body">
+                        <span class="badge badge-veggie">
+                            <i class="fa-solid :fa-leaf"></i> Vegetariano
+                        </span>
+                        <h3>Veggie Moon</h3>
+                        <p>Hambúrguer de grão-de-bico super crocante e temperado com ervas galácticas, muçarela derretida, alface americana fresca, tomate e molho verde artesanal no pão australiano macio.</p>
+                        <span class="product-price">R$ 31,90</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-disabled" disabled>
+                            <i class="fa-solid :fa-ban"></i> Indisponível
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3: Eclipse Cheddar -->
+                <article class="product-card">
+                    <div class="card-body">
+                        <span class="badge badge-status">Esgotado</span>
+                        <h3>Eclipse Cheddar</h3>
+                        <p>Duplo blend de 120g prensados na chapa, cascata de cheddar cremoso e cebola caramelizada lentamente no açúcar mascavo e shoyu.</p>
+                        <span class="product-price">R$ 39,90</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-disabled" disabled>
+                            <i class="fa-solid :fa-box-open"></i> Esgotado
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé simplificado -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Burger Moon - Sabor Intergaláctico. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

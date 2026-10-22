@@ -12,13 +12,13 @@ app.use(express.static(path.join(dirBase, 'src/publico')))
 app.get('/',(req, res) => {
     res.sendFile('src/paginas/index.html', {root: dirBase})
 })
-app.get('/',(req, res) => {
+app.get('/sobre',(req, res) => {
     res.sendFile('src/paginas/sobre.html', {root: dirBase})
 })
-app.get('/',(req, res) => {
+app.get('/produtos',(req, res) => {
     res.sendFile('src/paginas/produtos.html', {root: dirBase})
 })
-app.get('/',(req, res) => {
+app.get('/contato',(req, res) => {
     res.sendFile('src/paginas/contato.html', {root: dirBase})
 })
 
